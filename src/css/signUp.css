@@ -1,0 +1,10 @@
+.sign-up-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  border: 1px solid black;
+}
+
+.sign-up-form-container input {
+  display: flex;
+}

@@ -1,5 +1,5 @@
 import { API_BASE_URL } from '../config';
-import { clearAuthToken, saveAuthToken } from '../local-storage';
+import { /*clearAuthToken,*/ saveAuthToken } from '../local-storage';
 import jwtDecode from 'jwt-decode';
 
 export const SET_AUTH_TOKEN = 'SET_AUTH_TOKEN',
@@ -8,6 +8,10 @@ export const SET_AUTH_TOKEN = 'SET_AUTH_TOKEN',
     authToken 
   });
 
+  /**
+   * for loading and client persistence
+    * if you wanted to refresh the auth token, you might clear it first then log in again
+   */
 export const CLEAR_AUTH = 'CLEAR_AUTH',
   clearAuth = () => ({
     type: CLEAR_AUTH
