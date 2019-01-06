@@ -7,6 +7,7 @@ import {
   Field, 
   reduxForm
 } from 'redux-form';
+import myInput from './Field/index';
 
 class SignUpForm extends React.Component {
   render() {
@@ -15,14 +16,14 @@ class SignUpForm extends React.Component {
       <form onSubmit={handleSubmit}>
         <Field 
           name="username"
-          component="input"
+          component={myInput}
           type="text"
           placeholder="Username"
         />
         <Field 
           name="password"
-          component="input"
-          type="text"
+          component={myInput}
+          type="password"
           placeholder="Password"
         />
         <button type="submit" label="submit">Submit</button>
