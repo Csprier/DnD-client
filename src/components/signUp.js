@@ -5,15 +5,12 @@ import SignUpForm from './signUpForm';
 import '../css/signUp.css';
 
 class SignUp extends React.Component {
-  submit = (values) => {
-    console.log(values);
-  }
-
   render() {
+    // console.log('SignUp Component:', this.props);
     return (
       <div className="sign-up-form-container">
         <h2>Sign Up!</h2>
-        <SignUpForm onSubmit={this.submit}/>
+        <SignUpForm />
       </div>
     );
   }
